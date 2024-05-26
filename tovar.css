@@ -1,0 +1,134 @@
+body{
+margin: 0px;
+background-color:  rgb(216, 245, 192);
+color: rgb(30, 97, 80);
+}
+.container{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1{
+    font-size: 54px;
+    margin-bottom: 100px;
+}
+
+.nazvanie{
+text-align: center;
+}
+
+.foto{
+    background: url(photto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.harakteristiki{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 25px;
+
+}
+
+.h{
+    margin-bottom: 25px;
+}
+
+.opisanie{
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    border: 10px dashed rgb(154, 197, 86);
+    width: 800px;
+    height: 200px;
+    margin-left: 40px;
+}
+
+*{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.box{
+    background-color: rgb(176, 219, 141);
+    
+}
+
+a:hover{
+    color: rgb(89, 153, 24);
+    }
+
+    .conteiner{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 50%;
+        
+    }
+
+    a{
+        color: rgb(29, 112, 108);
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid rgb(146, 175, 122);
+         }
+    }
+
+    a{
+        @media (max-width: 576px) {
+            display: none;
+        };
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .conteiner{
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        display: grid;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        @media (max-width: 576px) {
+            grid-template-columns: 100%;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .chk:checked ~ .glavnaya{
+        display: block;
+    }
+    
+    .chk{
+     display: none ; 
+     
+    }
+     label{
+        color:rgb(29, 112, 108) ;
+        font-size: 25px;
+        margin: 5px;
+        @media (min-width: 576px){
+            display: none;
+        }
+     }
+    
+     a{
+        text-decoration: none;
+     }
+    
+     .conteiner .active{
+        color: rgb(110, 179, 41)   
+     }
+
+     a{
+        color: rgb(29, 112, 108);
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid rgb(146, 175, 122);
+         }
+    }
+

@@ -1,0 +1,74 @@
+body{
+    background-color: #6a9e32;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0px;
+    text-align: center;
+}
+
+.kartinka{
+    background: url(kkraska.jpg);
+    @media(max-width: 992px){
+        display: none;
+    }
+}
+.forma{
+   
+    background: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    width: 50%;
+    @media(max-width: 992px){
+        grid-template-columns: 100%;
+    }
+}
+
+.elem{
+    border: 4px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+input{
+    border-radius: 3px;
+    border: 3px solid rgb(93, 90, 133);
+    padding: 7px;
+    margin-bottom: 20px;
+    
+}
+
+.zapomnit{
+    padding: 15px;
+}
+
+input[type="text"], input[type="password"] {
+ border: none;
+ border-bottom: 3px solid rgb(73, 118, 202);
+ width: 100%;
+}
+ button{
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    background: rgb(74, 74, 143);
+    height: 40px;
+ }
+
+ .zapomnit{
+    color: rgb(17, 17, 39);
+ }
+
+ .reg{
+    margin-top: 15px;
+ }
+
+ a{
+    text-decoration:none;
+}

@@ -1,0 +1,157 @@
+.box{
+    background-color: rgb(176, 219, 141);
+    
+}
+
+a{
+    color: rgb(29, 112, 108);
+    text-decoration: none;
+    @media (max-width: 576px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid rgb(146, 175, 122);
+     }
+}
+a{
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(220, 248, 227);
+    color: rgb(29, 112, 108);
+}
+.conteiner{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: grid;
+    height: 60px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    @media (max-width: 576px) {
+        grid-template-columns: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+.glavnaya{
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+.chk:checked ~ .glavnaya{
+    display: block;
+}
+.chk{
+    display: none ; 
+    
+   }
+    label{
+    color:rgb(29, 112, 108) ;
+    font-size: 25px;
+    margin: 5px;
+    @media (min-width: 576px){
+        display: none;
+    }
+ }
+ 
+ *{
+    font-family: 'Comfortaa', sans-serif;
+}
+.css-delo{
+    border: 3px solid rgb(162, 230, 196);
+    background-color:rgb(203, 245, 224) ;
+    padding: 20px;
+    margin: 30px;
+}
+
+textarea{
+width: 100%;
+margin-top: 40px;
+}
+
+.div{
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(158, 241, 207);
+    padding: 10px;
+}
+
+.podval_foto{
+    background: url(manhattan.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 35px;
+}
+
+.podval2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto; 
+    width: 70%;
+    height: 70%;
+    padding-top: 70px;
+    @media (min-width: 0px) and (max-width: 992px){
+        grid-template-columns: repeat(1,100%) ;
+    }
+   
+}
+
+.podval{
+    background-color: rgb(16, 19, 16);
+    padding: 15px;
+    padding: 15px;
+    margin-top: 70px;
+}
+
+.podval_text{
+    color: beige;
+    text-align: 1.7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.abzac{
+    margin-top: 50px;
+}
+
+.nazvanie{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rewies_conteiner{
+    width: 70%;
+    margin: auto;
+}
+
+.review{
+    background-color:rgb(203, 245, 224) ;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 2;
+    border: 3px solid rgb(162, 230, 196);
+    padding: 15px;
+}
+
+a:hover{
+    color: rgb(89, 153, 24);
+    }
+
+    .conteiner .active{
+        color: rgb(89, 153, 24);
+    }

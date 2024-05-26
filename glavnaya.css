@@ -1,0 +1,16 @@
+.conteiner{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: grid;
+    background-color: rgb(130, 130, 218);
+    height: 60px;
+    text-align: center;
+}
+body{
+    margin: 0px;
+}
+
+.fon{
+    background: url(kraska.jpeg);
+    height: calc(100vh - 60px);
+    
+}

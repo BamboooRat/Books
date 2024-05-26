@@ -1,0 +1,424 @@
+.conteiner{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: grid;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    @media (max-width: 576px) {
+        grid-template-columns: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+a{
+    @media (max-width: 576px) {
+        display: none;
+    };
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+body{
+    margin: 0px;
+}
+
+.fon{
+    background: url(bg.jpg);
+    height: calc(100vh - 60px);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+
+.box{
+    background-color: rgb(176, 219, 141);
+    
+}
+
+a{
+    color: rgb(29, 112, 108);
+    @media (max-width: 576px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid rgb(146, 175, 122);
+     }
+}
+
+.review{
+
+    background: rgb(184, 219, 190);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+.avatar,.name, .stars,.text, .data {
+    margin: 35px;
+    color: rgb(29, 112, 108);
+}
+
+.avatar{
+ background: url(avatar.png);   
+ width: 150px;
+ height: 150px;
+ background-position: center;
+ background-size: cover;
+ border-radius: 60px;
+ margin-left: 21%;
+}
+
+.text{
+    line-height: 25px;
+}
+
+*{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.reviews{
+    margin: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    @media (max-width: 576px) {
+        grid-template-columns:repeat(1, 100%)
+    }
+    @media (min-width: 576px) and (max-width: 1200px) {
+        grid-template-columns:repeat(2, 50%)
+    }
+    @media (max-width: 576px) {
+        padding-top: 50px;
+      }
+      @media (min-width: 576px) and (max-width: 992px) {
+       padding-top: 70px;
+      }
+
+}
+
+.review2{
+    background: rgb(184, 219, 190);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+.review3{
+    background: rgb(184, 219, 190);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+.review4{
+    background: rgb(184, 219, 190);
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+.about2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    margin: auto; 
+    @media (min-width: 0px) and (max-width: 992px) {
+        grid-template-columns:repeat(1, 100%)
+    }
+}
+
+.about{
+   padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgb(220, 248, 227);
+    @media (max-width: 576px) {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    @media (min-width: 576px) and (max-width: 992px) {
+       padding-top: 70px;
+       padding-bottom: 100px;
+    }
+}
+
+.about_foto{
+    background: url(Knigi.jpg);
+    background-position: center;
+    background-size: cover;
+    @media (min-width: 0px) and (max-width: 992px){
+        height:400px ;
+    }
+}
+
+.about_text{
+    font-size: 16px;
+    line-height: 1.7;
+    margin-right: 50px;
+    color:rgb(29, 112, 108) ;
+}
+
+.podval_foto{
+    background: url(manhattan.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 35px;
+}
+
+.podval2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    @media (min-width: 0px) and (max-width: 992px){
+        grid-template-columns: repeat(1,100%) ;
+    }
+   
+}
+
+.podval{
+    background-color: rgb(16, 19, 16);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.podval_text{
+    color: beige;
+    text-align: 1.7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.abzac{
+    margin-top: 50px;
+}
+
+.product_conteiner{
+    padding-top: 100px;
+    padding-bottom: 150px;
+     @media (max-width: 576px) {
+        padding-top: 50px;
+        padding-bottom: 70px;
+      }
+      @media (min-width: 576px) and (max-width: 992px) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+      }
+    }
+
+.tovar{
+    font: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.products{
+
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 30px));
+    width: 80%;
+    gap: 30px;
+    margin: auto;
+    @media (max-width: 576px){
+        grid-template-columns: repeat(1, 100%)
+    }
+    @media (max-width: 992px) and (min-width: 576px){
+        grid-template-columns: repeat(2, 50%)
+    }
+    @media (min-width: 992px){
+        grid-template-columns: repeat(4, 25%)
+    }
+}
+
+.product_photo1{
+    background: url(product1.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo2{
+    background: url(product2.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo3{
+    background: url(product3.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo4{
+    background: url(product4.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo5{
+    background: url(product5.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo6{
+    background: url(product6.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo7{
+    background: url(product7.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+.product_photo8{
+    background: url(product8.jpg);
+    background-size: cover;
+    background-position: center;
+	height: 400px;
+}
+
+.product{
+    background-color: rgb(228, 250, 226);
+}
+
+.product_name , .product_price {
+    text-align: center;
+}
+
+.otziv{
+    text-align: center;
+}
+
+a:hover{
+color: rgb(110, 179, 41);
+transition: color 1s linear;
+}
+
+.product:hover{
+    opacity: 0.8;
+}
+
+.chk:checked ~ .glavnaya{
+    display: block;
+}
+
+.chk{
+ display: none ; 
+ 
+}
+ label{
+    color:rgb(29, 112, 108) ;
+    font-size: 25px;
+    margin: 5px;
+    @media (min-width: 576px){
+        display: none;
+    }
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ .conteiner .active{
+    color: rgb(110, 179, 41)   
+ }
+
+ .gallery{
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3 - 30px));
+    gap: 30px;
+    width: 70%;
+    margin: auto;    
+ }
+
+ .img1{
+    background: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img2{
+    background: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img3{
+    background: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img4{
+    background: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img5{
+    background: url(5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img6{
+    background: url(6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img7{
+    background: url(7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img8{
+    background: url(8.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+ .img9{
+    background: url(9.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+ }
+
+ .img1:hover , .img2:hover , .img3:hover ,  .img4:hover , .img5:hover , .img6:hover , .img7:hover , .img8:hover , .img9:hover{
+    opacity: 1;
+    transition: opacity 1s linear;
+    transform: scale(0.9);
+    transition: transform 0.5s linear;
+    cursor: pointer;
+ }
+    
+ h1{
+    text-align: center;
+ }
+
+ .descriptions{
+    font-size: 40px ;
+    text-align: center;
+    color: rgb(66, 168, 100);
+ }
+ .descriptions span{
+    background-color:rgb(183, 221, 132) ;
+    padding: 5px;
+    font-family: "Neucha", cursive;
+ }
+ 
